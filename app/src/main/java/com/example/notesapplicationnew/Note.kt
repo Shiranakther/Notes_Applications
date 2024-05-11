@@ -12,5 +12,5 @@ class Note (
     @ColumnInfo(name="timestamp")val timeStamp :String
     ) {
     @PrimaryKey(autoGenerate = true)
-    var id = 10
+    var id = 0
 }
