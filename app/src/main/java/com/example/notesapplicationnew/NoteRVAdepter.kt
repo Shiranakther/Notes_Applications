@@ -41,7 +41,13 @@ class NoteRVAdepter(
     }
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+          return allNotes.size
+        }
+
+    fun updateList(newList : List <Note>){
+        allNotes.clear()
+        allNotes.addAll(newList)
+        notifyDataSetChanged()
     }
 }
 
